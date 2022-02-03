@@ -1,5 +1,6 @@
 quiz:
 - question: 파이썬의 창시자는 누구인가?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: n
       example: 리누스 토르발스
@@ -10,6 +11,7 @@ quiz:
     - isAnswer: n
       example: 앤더스 헤즐스버그
 - question: 스택오버플로우 사용자 평가 1위이자 구글의 엔지니어인 이 사람은 누구인가?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: Jon Skeet
@@ -20,6 +22,7 @@ quiz:
     - isAnswer: n
       example: Marc Gravell
 - question: IDisposable과 관계 없는 것은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: n
       example: System.Runtime 
@@ -30,6 +33,7 @@ quiz:
     - isAnswer: y
       example: abstract
 - question: YAML(야멜)에서 Boolean 값으로 허용하지 않는 것을 고르시오.
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: 1 또는 0
@@ -38,6 +42,7 @@ quiz:
     - isAnswer: n
       example: y 또는 n
 - question: 다음 중 잘못된 것은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: n
       example: var user = new User();
@@ -48,6 +53,7 @@ quiz:
     - isAnswer: n
       example: User user = new User();
 - question: 마이크로소프트 본사의 위치는 어디인가?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: 시애틀
@@ -58,6 +64,7 @@ quiz:
     - isAnswer: n
       example: 런던
 - question: 스택오버플로우에서 선정한 2021년 최고의 인기 IDE는?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: n
       example: Eclipse
@@ -68,6 +75,7 @@ quiz:
     - isAnswer: y
       example: Visual Studio Code
 - question: 일론머스크와 관계없는 것은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: n
       example: 테슬라
@@ -78,6 +86,7 @@ quiz:
     - isAnswer: y
       example: 스페이스오딧세이
 - question: 닷넷데브 커뮤니티에서 열성가 뱃지는 며칠 연속으로 방문해야 얻을 수 있는가?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: n
       example: 연속 5일 방문
@@ -88,6 +97,7 @@ quiz:
     - isAnswer: n
       example: 연속 100일 방문
 - question: 넷플릭스가 사용하고 있는 클라우드 환경은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: n
       example: 구글 클라우드
@@ -98,6 +108,7 @@ quiz:
     - isAnswer: n
       example: 오라클 클라우드
 - question: 마이크로소프트 Azure 웹앱에서 제공하는 기본 무료 도메인은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: n
       example: azure.com
@@ -108,6 +119,7 @@ quiz:
     - isAnswer: n
       example: microsoft.com
 - question: sa의 정확한 의미는?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: System Administrator
@@ -118,6 +130,7 @@ quiz:
     - isAnswer: n
       example: structured analysis
 - question: 마크다운 파일의 확장명은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: n
       example: .markdown
@@ -128,6 +141,7 @@ quiz:
     - isAnswer: n
       example: .mkdw
 - question: 터미널에서 Blazor WebAssembly 프로젝트를 생성하는 명령어로 올바른 것은? (단, 옵션사항들은 모두 제외)
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: dotnet new blazorwasm
@@ -138,6 +152,7 @@ quiz:
     - isAnswer: n
       example: dotnet new blazor-wasm
 - question: WPF는 무엇의 약자인가?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: Windows Presentation Foundation
@@ -148,6 +163,7 @@ quiz:
     - isAnswer: n
       example: Windows Professional Foundation
 - question: HTML은 무엇의 약자인가?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: HyperText Markup Language
@@ -158,6 +174,7 @@ quiz:
     - isAnswer: n
       example: Hiphop Text Markup Language
 - question: 미드 빅뱅이론에 출연하지 않은 사람은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: 스티브잡스
@@ -168,6 +185,7 @@ quiz:
     - isAnswer: n
       example: 킵 손 박사
 - question: GitHub의 마스코트는 어떤 개체가 합성된 모습인가?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: 고양이와 문어
@@ -178,6 +196,7 @@ quiz:
     - isAnswer: n
       example: 호랑이와 돌고래
 - question: EntityFramework에서 데이터베이스 마이그레이션 명령어는?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: update-database
@@ -188,6 +207,7 @@ quiz:
     - isAnswer: n
       example: migration-run
 - question: Git에서 최신 코드를 업데이트 하는 방법은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: git pull
@@ -198,6 +218,7 @@ quiz:
     - isAnswer: n
       example: git push      
 - question: Git에서 새로운 원격 저장소를 가져오기 위한 방법은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: git clone https://github.com/devncore/...
@@ -208,6 +229,7 @@ quiz:
     - isAnswer: n
       example: git local https://github.com/devncore/...
 - question: XAML의 올바른 뜻은 무엇인가?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: Extensible Application Markup Language
@@ -218,6 +240,7 @@ quiz:
     - isAnswer: n
       example: Extensible Application Markdown Language
 - question: XAML과 가장 관련없는 것은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: Winforms
@@ -228,6 +251,7 @@ quiz:
     - isAnswer: n
       example: UWP
 - question: 넷플릭스에서 4K와 HDR을 볼 수 있는 요금제는?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: 프리미엄
@@ -236,6 +260,7 @@ quiz:
     - isAnswer: n
       example: 스탠다드
 - question: EntityFrameworkCore의 기본 인스턴스 클래스는?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: DbContext
@@ -246,6 +271,7 @@ quiz:
     - isAnswer: n
       example: DatabaseContext
 - question: Visual Studio에서 Ctrl + x 기능으로 알맞은 것은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: 해당 커서 한줄 잘라내기
@@ -254,6 +280,7 @@ quiz:
     - isAnswer: n
       example: 선택 문자 제거하기
 - question: MVC의 뜻으로 옳은 것은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: Model View Controller
@@ -262,6 +289,7 @@ quiz:
     - isAnswer: n
       example: Model View Constructor
 - question: 아마존 AWS에서 지원하지 않는 RDS 데이터베이스는?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: n
       example: Oracle
@@ -272,6 +300,7 @@ quiz:
     - isAnswer: y
       example: MongoDB
 - question: DML은 무엇의 약자인가?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: Data Manipulation Language
@@ -282,6 +311,7 @@ quiz:
     - isAnswer: n
       example: Data Migration Language
 - question: 다음 중 Namespace가 다른 클래스는?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: ToggleButton
@@ -292,6 +322,7 @@ quiz:
     - isAnswer: n
       example: ViewBox
 - question: DML(Data Manipulation Language) 명령어가 아닌 것은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: GRANT
@@ -302,6 +333,7 @@ quiz:
     - isAnswer: n
       example: DELETE
 - question: 상속받은 클래스에서만 접근이 가능한 접근제어자는?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: protected
@@ -312,6 +344,7 @@ quiz:
     - isAnswer: n
       example: internal
 - question: C# 9.0에 새롭게 추가된 기능이 아닌 것은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: 널 병합 할당자(Null Coalescing Assignment)
@@ -322,6 +355,7 @@ quiz:
     - isAnswer: n
       example: init 접근자
 - question: 현재 git branch는 main이다. devncore라는 브랜치로 변경하고자 할 때 알맞은 터미널 명령어는?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: git branch devncore
@@ -332,6 +366,7 @@ quiz:
     - isAnswer: n
       example: git change branch devncore
 - question: Microsoft MVP에 대한 설명으로 잘못된 것은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: MVP가 되기 위해서는 후보 추천서와 자기소개 영상을 제출해야 한다.
@@ -342,6 +377,7 @@ quiz:
     - isAnswer: n
       example: Microsoft 직원은 MVP가 될 수 없다.
 - question: 다음 중 성격이 다른 하나는 무엇인가?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: Border
@@ -352,6 +388,7 @@ quiz:
     - isAnswer: n
       example: UserControl
 - question: 시스템의 구성 요소 중 출력된 결과가 예정된 목표를 만족시키지 못할 경우 목표 달성을 위해 반복 처리하는 것을 의미하는 것은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: n
       example: Process
@@ -362,6 +399,7 @@ quiz:
     - isAnswer: n
       example: Output
 - question: 입·출력 제어장치의 종류가 아닌 것은? 
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: n
       example: DMA
@@ -372,6 +410,7 @@ quiz:
     - isAnswer: n
       example: 입출력 프로세서
 - question: React에서 state에 대해서 잘못된 것은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: state는 읽기 전용이다.
@@ -382,6 +421,7 @@ quiz:
     - isAnswer: n
       example: setState()는 비동기 방식이다.
 - question: 반복문을 종료시키는 키워드는?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: break
@@ -392,6 +432,7 @@ quiz:
     - isAnswer: n
       example: switch
 - question: 하나의 트랜잭션에서 데이터를 액세스 하는 동안 다른 트랜잭션이 그 데이터 항목을 액세스 할 수 없도록 제어하는 기법은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: n
       example: 타임스탬프(Time Stamp)
@@ -402,6 +443,7 @@ quiz:
     - isAnswer: n
       example: 데이터마이닝(Data Mining)
 - question: 데이터베이스에서 View의 특징이 아닌 것은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: n
       example: 하나 이상의 기본 테이블로부터 유도된 가상 테이블이다.
@@ -412,6 +454,7 @@ quiz:
     - isAnswer: n
       example: 먼저 정의된 뷰는 다른 뷰를 정의할 때 기초가 될 수 있다.
 - question: 다음 중 변수에 관한 설명으로 틀린 것은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: n
       example: 변수는 지역변수와 전역변수가 있다.
@@ -422,6 +465,7 @@ quiz:
     - isAnswer: y
       example: int 타입의 변수는 값을 참조해서 연산이 빠르다.
 - question: 다음 중 OnMouseDown 메서드는 어느 클래스에 구현되어있는가?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: UIElement
@@ -432,6 +476,7 @@ quiz:
     - isAnswer: n
       example: DependencyObject
 - question: JSON 파일을 저장할 때 사용되는 인코딩 방식은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: UTF8
@@ -442,6 +487,7 @@ quiz:
     - isAnswer: n
       example: UTF32     
 - question: 오버로딩(Overloading)과 오버라이딩(Overridding)의 대한 설명이 아닌 것은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: 오버라이딩은 static 한정자와 override 키워드를 사용하여 구현한다.
@@ -452,6 +498,7 @@ quiz:
     - isAnswer: n
       example: 오버라이딩 할 때 부모클래스에서는 virtual 키워드로, 자식 클래스에서는 override 키워드로 메서드를 정의해야 한다.
 - question: 마크업 언어가 실제 표시되는 방법을 기술하는 스타일 언어 CSS는 무엇의 약자인가?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: y
       example: Cascading Style Sheets
@@ -462,6 +509,7 @@ quiz:
     - isAnswer: n
       example: Collection Style Sheets    
 - question: YAML에 대한 설명으로 맞는 것은?
+  url: https://shop-phinf.pstatic.net/20211230_236/1640854640093f4307_JPEG/41990482749188797_1813784618.jpg
   answers:
     - isAnswer: n
       example: 들여쓰기는 무조건 4칸만 지원한다.
