@@ -16,7 +16,7 @@ namespace BlazorQuiz.Server.Controllers
 	[Route("[controller]")]
 	public class QuizDataController : ControllerBase
 	{
-		private static string YamlDataUrl = "https://raw.githubusercontent.com/devncore/blazor-quiz/master/data/quiz-basic.yml";
+		private static string YamlDataUrl = "https://raw.githubusercontent.com/devpnu/blazor-quiz/master/data/quiz-basic.yml";
 
 		private readonly ILogger<WeatherForecastController> _logger;
 

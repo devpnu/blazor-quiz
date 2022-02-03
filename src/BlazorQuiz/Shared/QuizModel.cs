@@ -9,6 +9,7 @@ namespace BlazorQuiz.Shared
     public class QuizModel
     {
         public string Question { get; set; }
+        public string Url { get; set; }
         public List<AnswerModel> Answers { get; set; }
     }
 }

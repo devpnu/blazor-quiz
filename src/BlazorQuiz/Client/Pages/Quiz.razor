@@ -27,7 +27,7 @@
             {
                 <div class="quiz">
                     <div class="quiz-title">@quiz.Question</div>
-
+                    <img src="@quiz.Url" width="300px"/>
                     @foreach (var answer in quiz.Answers)
                     {
                         <div class="quiz-answer" @onclick="()=> Choice(answer)">@answer.Example</div>
