@@ -23,8 +23,8 @@ quiz:
     - isAnswer: Y
       example: 쥬빌리 블레이슬릿(jubilee bracelet)
 
-- question: 다음은 롤렉스 시계의 무브먼트n종류는??
-  url: https://shop-phinf.pstatic.net/20211122_58/1637584211772ptQST_JPEG/tmp4225026991339934618.jpg
+- question: 다음은 롤렉스 시계 무브먼트이다n이 무브먼트의 방식은??
+  url: https://content.rolex.com/dam/model-page/features/movement/movement-calibre-3235-pop-in-g.jpg?imwidth=300
   answers:
     - isAnswer: Y
       example: 오토매틱 무브먼트(Automatic Movement)
