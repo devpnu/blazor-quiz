@@ -1,5 +1,5 @@
 quiz:
-- question: 서브마리너 블랙 데이트의 레퍼런스 넘버는?
+- question: 다음 서브마리너 블랙 데이트의 레퍼런스 넘버는?
   url: https://content.rolex.com/dam/2021/upright-bba-with-shadow/m126610ln-0001.png
   answers:
     - isAnswer: Y
@@ -8,35 +8,35 @@ quiz:
       example: 12610LV
       
 - question: 다음 롤렉스 파츠의 이름은?
-  url: https://content.rolex.com/dam/2021/bg/model-popin-background-steel.jpg?impolicy=v6-model-feature&c1path=/dam/2021/harmonised/bezel-with-colored-shadow/50897.png
+  url: https://content.rolex.com/dam/2021/bg/model-popin-background-steel.jpg?impolicy=v6-model-feature&c1path=/dam/2021/harmonised/bezel-with-colored-shadow/50897.png       
   answers:
     - isAnswer: n
       example: 바질
     - isAnswer: Y
       example: 베젤
       
-- question: 다음 롤렉스 파츠의 이름은?
-  url: https://content.rolex.com/dam/2021/bg/model-popin-background-steel.jpg?impolicy=v6-model-feature&c1path=/dam/2021/harmonised/bezel-with-colored-shadow/50897.png
+- question: 다음 롤렉스 브레이슬릿의 이름은?
+  url: https://shop-phinf.pstatic.net/20211230_289/1640875152810F9Rd5_JPEG/tmp1250414448384315488.jpg
   answers:
     - isAnswer: n
-      example: 바질
+      example: 오이스터 브레이슬릿(Oyster)
     - isAnswer: Y
-      example: 베젤
+      example: 쥬빌리 블레이슬릿(jubilee bracelet)
 
-- question: 다음 롤렉스 파츠의 이름은?
-  url: https://content.rolex.com/dam/2021/bg/model-popin-background-steel.jpg?impolicy=v6-model-feature&c1path=/dam/2021/harmonised/bezel-with-colored-shadow/50897.png
+- question: 다음은 롤렉스 시계의 무브먼트의 종류는??
+  url: https://shop-phinf.pstatic.net/20211122_58/1637584211772ptQST_JPEG/tmp4225026991339934618.jpg
   answers:
-    - isAnswer: n
-      example: 바질
     - isAnswer: Y
-      example: 베젤
+      example: 오토매틱 무브먼트(Automatic Movement)
+    - isAnswer: n
+      example: 쿼츠 무브먼트(Quartz Movement)
 
-- question: 다음 롤렉스 파츠의 이름은?
-  url: https://content.rolex.com/dam/2021/bg/model-popin-background-steel.jpg?impolicy=v6-model-feature&c1path=/dam/2021/harmonised/bezel-with-colored-shadow/50897.png
+- question: 2020년 부터 출시된 롤렉스 게런티 카드속에는 OOO이 들어가 있다?
+  url: https://content.rolex.com/dam/rolex-sav/buying-a-rolex/the-rolex-guarantee/2021/rolex-guarantee_retailcampaign2020_guaranteecard.jpg
   answers:
     - isAnswer: n
-      example: 바질
+      example: NFT
     - isAnswer: Y
-      example: 베젤
+      example: NFC
 
       
