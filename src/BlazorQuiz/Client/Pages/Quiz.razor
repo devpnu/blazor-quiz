@@ -61,15 +61,16 @@
 
 
 
-							<div class="mat-button">광고 및 비지니스 문의 devpnu@naver.com</div>
+							<div class="mat-button" style="text-align: center">광고 및 비지니스 문의 devpnu@naver.com</div>
 
-
+							 <h2 class="mat-h2"></h2>
 							<MatThemeProvider Theme="@theme1">
-							<div class="mat-button">  OpenSource License</div>
+							<div class="mat-button"  style="text-align: center">  OpenSource License
 
 							
-								<MatButtonLink Href="https://www.matblazor.com" Outlined="true">1. Mat-Blazor</MatButtonLink>
-							<MatButtonLink Href="https://github.com/devncore/blazor-quiz"Outlined="true">2. Blazor Quiz</MatButtonLink>
+								<MatButtonLink Href="https://www.matblazor.com" Outlined="true">1.Mat-Blazor</MatButtonLink>
+							<MatButtonLink Href="https://github.com/devncore/blazor-quiz" Outlined="true">2.Blazor Quiz</MatButtonLink>
+							</div>
 								</MatThemeProvider>
 
 		}
@@ -133,7 +134,7 @@
 		}
 
 		progress = (100 / 5 * current).ToString("0");
-		currentBy100 = (float)(current + 1) / (float)questionCount;
+		currentBy100 = (float)(current) / (float)questionCount;
 		current++;
 	}
 
@@ -167,7 +168,7 @@
 	MatTheme theme1 = new MatTheme()
 		{
 			Primary = MatThemeColors.Grey._500.Value,
-			Secondary = MatThemeColors.BlueGrey._500.Value
+			Secondary = MatThemeColors.Grey._500.Value
 		};
 		
 	MatTheme theme2 = new MatTheme()
