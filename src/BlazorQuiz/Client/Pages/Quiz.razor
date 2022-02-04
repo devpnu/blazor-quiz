@@ -10,122 +10,169 @@
 <div class="main">
     <div class="box">
         @if (quiz == null)
-        {
-            <p><em>Loading...</em></p>
-        }
-        else
-        {
-            <a href="https://smartstore.naver.com/wstimelab/">
-                <img src="https://thumbs.dreamstime.com/z/official-sponsor-button-sticker-banner-rounded-glass-sign-195886589.jpg" class="spon-img"/>
-            </a>
-             
+		{
+							<p><em>Loading...</em></p>
+		}
+		else
+		{
+							<a href="https://smartstore.naver.com/wstimelab/">
+								<img src="https://raw.githubusercontent.com/devpnu/blazor-quiz/master/data/promotion_pc_211204.png" class="spon-img"/>
+							</a>
 
-            <div class="quiz-progress">
-                <div class="quiz-progress-box" role="progressbar" style="@($"width: {progress}%")" aria-valuenow="@progress" aria-valuemin="0" aria-valuemax="100"></div>
-               
-                @if (progress != "100")
-                {     
-                    <div class="quiz-progress-value">@($"{progress}%")</div>
-                }
-             </div>
 
-            if (current < 6)
-            {
-                <div class="quiz">
-                    <img src="@quiz.Url" class="quiz-img"/>
-                    <div class="quiz-title">@quiz.Question</div>
-                    
-                    @foreach (var answer in quiz.Answers)
-                    {
-                        <div class="quiz-answer" @onclick="()=> Choice(answer)">@answer.Example</div>
-                    }
-                </div>
-            }
-            else
-            {
-                <div class="quiz-gameover">Game Over</div>
-                <div class="quiz-result">총 @questionCount 문제 중에 <span>@correctCount</span> 문제 정답!</div>
+							<div class="quiz">
+							 <h3 class="mat-subtitle1">롤렉스 퀴즈 @($"{current-1}/{questionCount}")</h3>
+						<MatThemeProvider Theme="@theme2">	
+							 <MatProgressBar Progress="@currentBy100"></MatProgressBar>
+							 </MatThemeProvider>
+						 </div>
 
-                <div class="quiz-message">@resultMessage</div>
+			if (current < 6)
+			{
+												<div class="quiz">
+												<img src="@quiz.Url" class="quiz-img"/>
 
-                <div class="quiz-buttons">
-                    <button @onclick="Reset" class="quiz-retry">다시하기</button>
-                </div>
-            }
-        }
-    </div>
+												<div class="quiz-title">
+						@foreach (var sub in quiz.Question.Split('n'))
+						{
+							@sub <br/>
+						}
+												</div>
+
+
+					@foreach (var answer in quiz.Answers)
+					{
+																		<div class="quiz-answer" @onclick="()=> Choice(answer)">@answer.Example</div>
+					}
+												</div>
+			}
+			else
+			{
+												<div class="quiz-gameover">Game Over</div>
+												<div class="quiz-result">총 @questionCount 문제 중에 <span>@correctCount</span> 문제 정답!</div>
+
+												<div class="quiz-message">@resultMessage</div>
+
+												<div class="quiz-buttons">
+													<button @onclick="Reset" class="quiz-retry">다시하기</button>
+												</div>
+			}
+
+
+
+
+							<div class="mat-button">광고 및 비지니스 문의 devpnu@naver.com</div>
+
+
+							<MatThemeProvider Theme="@theme1">
+							<div class="mat-button">  OpenSource License</div>
+
+							
+								<MatButtonLink Href="https://www.matblazor.com" Outlined="true">1. Mat-Blazor</MatButtonLink>
+							<MatButtonLink Href="https://github.com/devncore/blazor-quiz"Outlined="true">2. Blazor Quiz</MatButtonLink>
+								</MatThemeProvider>
+
+		}
+	</div>
 </div>
 
 @code {
-    private int questionCount = 5;
-    private int correctCount = 0;
-    private int current = 0;
-    private string resultMessage;
+	public string MyString2
+	{
+		get => _myString2;
+		set
+		{
+			_myString2 = value;
+			this.StateHasChanged();
+		}
+	}
 
-    private QuizModel[] quizs;
-    private QuizModel quiz;
+	private string _myString2;
 
-    private string message0 = "일부러 장난치신거죠?😑";
-    private string message1 = "컨디션이 안 좋으신 건가요..?😵";
-    private string message2 = "헷갈렸던 문제는 💻검색💻해보는 센스!!";
-    private string message3 = "집중해서 다시 풀어보아요!💪";
-    private string message4 = "한번 더 풀고 만점 도전!😉";
-    private string message5 = "🌟축하드립니다🌟 고인물 인정!";
-    
-    private string progress = "";
+	private int questionCount = 5;
+	private int correctCount = 0;
+	private int current = 0;
+	private float currentBy100 = 0;
 
-    protected override async Task OnInitializedAsync()
-    {
-        await Reset();
-    }
+	private string resultMessage;
 
-    private async Task Reset()
-    {
-        quizs = await Http.GetFromJsonAsync<QuizModel[]>("QuizData");
-        current = 0;
-        correctCount = 0;
-        Next();
-    }
+	private QuizModel[] quizs;
+	private QuizModel quiz;
 
-    private void Next()
-    {
-        if (current < 5)
-        {
-            quiz = quizs[current];
-        }
-        else
-        {
-            resultMessage = GetResultMessage(correctCount);
-        }
+	private string message0 = "일부러 장난치신거죠?😑";
+	private string message1 = "컨디션이 안 좋으신 건가요..?😵";
+	private string message2 = "헷갈렸던 문제는 💻검색💻해보는 센스!!";
+	private string message3 = "집중해서 다시 풀어보아요!💪";
+	private string message4 = "한번 더 풀고 만점 도전!😉";
+	private string message5 = "🌟축하드립니다🌟 고인물 인정!";
 
-        progress = (100 / 5 * current).ToString("0");
-        current++;
-    }
+	private string progress = "";
 
-    private void Choice(AnswerModel answer)
-    {
-        if(answer.IsAnswer)
-        {
-            correctCount++;
-        }
+	protected override async Task OnInitializedAsync()
+	{
+		await Reset();
+	}
 
-        Next();
-    }
+	private async Task Reset()
+	{
+		quizs = await Http.GetFromJsonAsync<QuizModel[]>("QuizData");
+		current = 0;
+		correctCount = 0;
+		Next();
+	}
 
-    private string GetResultMessage(int correctCount)
-    {
-        string ment ="";
+	private void Next()
+	{
+		if (current < questionCount)
+		{
+			quiz = quizs[current];
+		}
+		else
+		{
+			resultMessage = GetResultMessage(correctCount);
+		}
 
-        switch (correctCount)
-        {
-            case 0: ment = message0; break;
-            case 1: ment = message1; break;
-            case 2: ment = message2; break;
-            case 3: ment = message3; break;
-            case 4: ment = message4; break;
-            case 5: ment = message5; break;
-        }
+		progress = (100 / 5 * current).ToString("0");
+		currentBy100 = (float)(current + 1) / (float)questionCount;
+		current++;
+	}
 
-        return ment;
-    }
+	private void Choice(AnswerModel answer)
+	{
+		if (answer.IsAnswer)
+		{
+			correctCount++;
+		}
+
+		Next();
+	}
+
+	private string GetResultMessage(int correctCount)
+	{
+		string ment = "";
+
+		switch (correctCount)
+		{
+			case 0: ment = message0; break;
+			case 1: ment = message1; break;
+			case 2: ment = message2; break;
+			case 3: ment = message3; break;
+			case 4: ment = message4; break;
+			case 5: ment = message5; break;
+		}
+
+		return ment;
+	}
+
+	MatTheme theme1 = new MatTheme()
+		{
+			Primary = MatThemeColors.Grey._500.Value,
+			Secondary = MatThemeColors.BlueGrey._500.Value
+		};
+		
+	MatTheme theme2 = new MatTheme()
+		{
+			Primary = "#b18d58",
+			Secondary = "#b18d58"
+		};
 }

@@ -28,12 +28,12 @@ h1 {
 .spon-img {
 	display: block;
 	margin: 0 auto;
-	height: 85px;
+	height: 100px;
 }
 .quiz-img{
 	display: block;
 	margin: 0 auto;
-	width:450px;
+	width:300px;
 }
 
 .quiz-title {
@@ -49,17 +49,17 @@ h1 {
 	margin-top: 5px;
 	margin-bottom: 5px;
 	padding: 15px;
-	border: 2px solid #457840;
+	border: 2px solid #b18d58;
 	border-radius: 25px;
 	background-color: #141414;
 	font-size: 12pt;
 }
 
-.quiz-answer:hover {
-	border: 2px solid #78629c;
-	background-color: #2e1852;
-	cursor: pointer;
-}
+	.quiz-answer:hover {
+		border: 2px solid #b18d58;
+		background-color: #b18d58;
+		cursor: pointer;
+	}
 
 
 .quiz-current {
@@ -129,10 +129,10 @@ h1 {
 	font-size: 18px;
 }
 
-.quiz-retry:hover {
-	background-color: #4398e0;
-	cursor: pointer;
-}
+	.quiz-retry:hover {
+		background-color: #b18d58;
+		cursor: pointer;
+	}
 
 .quiz-message {
 	text-align: center;
