@@ -3,9 +3,9 @@ quiz:
   url: https://content.rolex.com/dam/2021/upright-bba-with-shadow/m126610ln-0001.png
   answers:
     - isAnswer: Y
-      example: 12610LN
+      example: 126610LN
     - isAnswer: n
-      example: 12610LV
+      example: 126610LV
       
 - question: 다음 롤렉스 파츠의 이름은?
   url: https://content.rolex.com/dam/2021/bg/model-popin-background-steel.jpg?impolicy=v6-model-feature&c1path=/dam/2021/harmonised/bezel-with-colored-shadow/50897.png       
