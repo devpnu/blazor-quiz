@@ -6,6 +6,7 @@
     @@import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css); 
 </style>
 
+
 <div class="main">
     <div class="box">
         @if (quiz == null)
@@ -14,6 +15,11 @@
         }
         else
         {
+            <a href="https://smartstore.naver.com/wstimelab/">
+                <img src="https://thumbs.dreamstime.com/z/official-sponsor-button-sticker-banner-rounded-glass-sign-195886589.jpg" class="spon-img"/>
+            </a>
+             
+
             <div class="quiz-progress">
                 <div class="quiz-progress-box" role="progressbar" style="@($"width: {progress}%")" aria-valuenow="@progress" aria-valuemin="0" aria-valuemax="100"></div>
                
@@ -26,8 +32,9 @@
             if (current < 6)
             {
                 <div class="quiz">
+                    <img src="@quiz.Url" class="quiz-img"/>
                     <div class="quiz-title">@quiz.Question</div>
-                    <img src="@quiz.Url" width="300px"/>
+                    
                     @foreach (var answer in quiz.Answers)
                     {
                         <div class="quiz-answer" @onclick="()=> Choice(answer)">@answer.Example</div>

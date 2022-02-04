@@ -25,23 +25,34 @@ h1 {
 	margin-right: 10px;
 }
 
+.spon-img {
+	display: block;
+	margin: 0 auto;
+	height: 85px;
+}
+.quiz-img{
+	display: block;
+	margin: 0 auto;
+	width:450px;
+}
+
 .quiz-title {
-	font-size: 18pt;
-	margin-top: 30px;
-	margin-bottom: 50px;
+	font-size: 13pt;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	text-align: center;
 	line-height: 32px;
 }
 
 .quiz-answer {
 	text-align: center;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	padding: 30px;
-	border: 2px solid #9481b3;
-	border-radius: 50px;
-	background-color: #492c78;
-	font-size: 16pt;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 15px;
+	border: 2px solid #457840;
+	border-radius: 25px;
+	background-color: #141414;
+	font-size: 12pt;
 }
 
 .quiz-answer:hover {
