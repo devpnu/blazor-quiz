@@ -1,14 +1,14 @@
 quiz:
-- question: 다음 서브마리너 블랙 데이트의 레퍼런스 넘버는?
-  url: https://content.rolex.com/dam/2021/upright-bba-with-shadow/m126610ln-0001.png
+- question: 다음 서브마리너 블랙 데이트의n레퍼런스 넘버는?
+  url: https://content.rolex.com/dam/2021/upright-bba-with-shadow/m126610ln-0001.png?imwidth=840
   answers:
     - isAnswer: Y
-      example: 12610LN
+      example: 126610LN
     - isAnswer: n
-      example: 12610LV
+      example: 126610LV
       
 - question: 다음 롤렉스 파츠의 이름은?
-  url: https://content.rolex.com/dam/2021/bg/model-popin-background-steel.jpg?impolicy=v6-model-feature&c1path=/dam/2021/harmonised/bezel-with-colored-shadow/50897.png       
+  url: https://shop-phinf.pstatic.net/20211214_224/1639484355228rHHQi_PNG/%EB%B2%A0%EC%A0%A4.png       
   answers:
     - isAnswer: n
       example: 바질
@@ -21,18 +21,18 @@ quiz:
     - isAnswer: n
       example: 오이스터 브레이슬릿(Oyster)
     - isAnswer: Y
-      example: 쥬빌리 블레이슬릿(jubilee bracelet)
+      example: 쥬빌리 블레이슬릿(Jubilee bracelet)
 
-- question: 다음은 롤렉스 시계의 무브먼트의 종류는??
-  url: https://shop-phinf.pstatic.net/20211122_58/1637584211772ptQST_JPEG/tmp4225026991339934618.jpg
+- question: 다음은 롤렉스 시계 무브먼트이다n이 무브먼트의 방식은??
+  url: https://cdn.watchbase.com/caliber/lg/origin:jpg/rolex/3135-f8.webp
   answers:
     - isAnswer: Y
       example: 오토매틱 무브먼트(Automatic Movement)
     - isAnswer: n
       example: 쿼츠 무브먼트(Quartz Movement)
 
-- question: 2020년 부터 출시된 롤렉스 게런티 카드속에는 OOO이 들어가 있다?
-  url: https://content.rolex.com/dam/rolex-sav/buying-a-rolex/the-rolex-guarantee/2021/rolex-guarantee_retailcampaign2020_guaranteecard.jpg
+- question: 2020년부터 출시된 롤렉스 개런티 카드 속에는 OOO가 들어가 있다?
+  url: https://content.rolex.com/dam/rolex-sav/buying-a-rolex/the-rolex-guarantee/2021/rolex-guarantee_retailcampaign2020_guaranteecard.jpg?imwidth=2880
   answers:
     - isAnswer: n
       example: NFT
