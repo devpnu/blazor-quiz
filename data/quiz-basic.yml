@@ -31,7 +31,7 @@ quiz:
     - isAnswer: n
       example: 쿼츠 무브먼트(Quartz Movement)
 
-- question: 2020년부터 출시된 롤렉스 개런티 카드 속에는 OOO가 들어가 있다?
+- question: 2020년부터 출시된 롤렉스 개런티 카드 속에는nOOO가 들어가 있다?
   url: https://content.rolex.com/dam/rolex-sav/buying-a-rolex/the-rolex-guarantee/2021/rolex-guarantee_retailcampaign2020_guaranteecard.jpg?imwidth=2880
   answers:
     - isAnswer: n
