@@ -11,89 +11,83 @@
     <div class="box">
         @if (quiz == null)
 		{
-							<p><em>Loading...</em></p>
+			<p><em>Loading...</em></p>
 		}
 		else
 		{
-							<a href="https://smartstore.naver.com/wstimelab/">
-								<img src="https://raw.githubusercontent.com/devpnu/blazor-quiz/master/data/promotion_pc_211204.png" class="spon-img"/>
-							</a>
-
-
-							<div class="quiz">
-							 <h3 class="mat-subtitle1">롤렉스 퀴즈 @($"{current-1}/{questionCount}")</h3>
-						<MatThemeProvider Theme="@theme2">	
-							 <MatProgressBar Progress="@currentBy100"></MatProgressBar>
-							 </MatThemeProvider>
-						 </div>
+			<a href="https://smartstore.naver.com/wstimelab/">
+				<img src="https://raw.githubusercontent.com/devpnu/blazor-quiz/master/data/promotion_quiz.png" alt="sponsor banner" class="spon-img"/>
+			</a>
 
 			if (current < 6)
 			{
-												<div class="quiz">
-												<img src="@quiz.Url" class="quiz-img"/>
+				<div class="quiz">
+					<div class="mat-layout-grid">
+						<div class="mat-layout-grid-inner">										
+							<div class="mat-layout-grid-cell">롤렉스 퀴즈 @($"{current}/{questionCount}")</div>
+							<div class="mat-layout-grid-cell"></div>
+							<div class="mat-layout-grid-cell"> @String.Format("누적방문자수 {0}명", totalPeople) </div>
+						</div>
+					</div>
+					<MatThemeProvider Theme="@theme2">	
+						<MatProgressBar Progress="@currentBy100"></MatProgressBar>
+					</MatThemeProvider>
+				</div>
 
-												<div class="quiz-title">
+				<div class="quiz">
+					<img src="@quiz.Url" class="quiz-img"/>
+
+					<div class="quiz-title">
 						@foreach (var sub in quiz.Question.Split('n'))
 						{
 							@sub <br/>
 						}
-												</div>
-
+					</div>
+				</div>
 
 					@foreach (var answer in quiz.Answers)
 					{
-																		<div class="quiz-answer" @onclick="()=> Choice(answer)">@answer.Example</div>
+						<div class="quiz-answer" @onclick="()=> Choice(answer)">@answer.Example</div>
 					}
-												</div>
+			
 			}
 			else
 			{
-												<div class="quiz-gameover">Game Over</div>
-												<div class="quiz-result">총 @questionCount 문제 중에 <span>@correctCount</span> 문제 정답!</div>
+					<div class="quiz-gameover">Game Over</div>
+					<div class="quiz-result">총 @questionCount 문제 중에 <span>@correctCount</span> 문제 정답!</div>
 
-												<div class="quiz-message">@resultMessage</div>
+					<div class="quiz-message">@resultMessage</div>
 
-												<div class="quiz-buttons">
-													<button @onclick="Reset" class="quiz-retry">다시하기</button>
-												</div>
+					<div class="quiz-buttons">
+						<button @onclick="Reset" class="quiz-retry">다시하기</button>
+					</div>
 			}
 
 
 
+			<div class="mat-button" style="text-align: center">광고 및 비지니스 문의 devpnu@naver.com</div>
 
-							<div class="mat-button" style="text-align: center">광고 및 비지니스 문의 devpnu@naver.com</div>
+			<h2 class="mat-h2"></h2>
+			<MatThemeProvider Theme="@theme1">
+				<div class="mat-button"  style="text-align: center">OpenSource License</div>
 
-							 <h2 class="mat-h2"></h2>
-							<MatThemeProvider Theme="@theme1">
-							<div class="mat-button"  style="text-align: center">  OpenSource License
+				<div style="text-align: center">
+					<MatButtonLink Href="https://www.matblazor.com" Outlined="true">1.Mat-Blazor</MatButtonLink>
+					<MatButtonLink Href="https://github.com/devncore/blazor-quiz" Outlined="true">2.Blazor Quiz</MatButtonLink>
+				</div>
 
-							
-								<MatButtonLink Href="https://www.matblazor.com" Outlined="true">1.Mat-Blazor</MatButtonLink>
-							<MatButtonLink Href="https://github.com/devncore/blazor-quiz" Outlined="true">2.Blazor Quiz</MatButtonLink>
-							</div>
-								</MatThemeProvider>
-
+			</MatThemeProvider>
 		}
 	</div>
 </div>
 
 @code {
-	public string MyString2
-	{
-		get => _myString2;
-		set
-		{
-			_myString2 = value;
-			this.StateHasChanged();
-		}
-	}
-
-	private string _myString2;
-
 	private int questionCount = 5;
 	private int correctCount = 0;
 	private int current = 0;
 	private float currentBy100 = 0;
+	public static int totalPeople = 0;
+
 
 	private string resultMessage;
 
@@ -108,7 +102,7 @@
 	private string message5 = "🌟축하드립니다🌟 고인물 인정!";
 
 	private string progress = "";
-
+	
 	protected override async Task OnInitializedAsync()
 	{
 		await Reset();
@@ -117,6 +111,10 @@
 	private async Task Reset()
 	{
 		quizs = await Http.GetFromJsonAsync<QuizModel[]>("QuizData");
+		var people = await Http.GetFromJsonAsync<People>("People");
+		
+		totalPeople = people.TotalPeopleCount;
+
 		current = 0;
 		correctCount = 0;
 		Next();

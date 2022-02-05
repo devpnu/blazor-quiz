@@ -17,7 +17,7 @@ namespace BlazorQuiz.Server.Controllers
 	public class QuizDataController : ControllerBase
 	{
 		private static string YamlDataUrl = "https://raw.githubusercontent.com/devpnu/blazor-quiz/master/data/quiz-basic.yml";
-
+	
 		private readonly ILogger<WeatherForecastController> _logger;
 
 		public QuizDataController(ILogger<WeatherForecastController> logger)
@@ -54,7 +54,7 @@ namespace BlazorQuiz.Server.Controllers
 		{
 			Random rng = new Random();
 			int n = list.Count;
-
+			
 			while (n > 1) 
 			{
 				n--;
