@@ -24,9 +24,13 @@
 				<div class="quiz">
 					<div class="mat-layout-grid">
 						<div class="mat-layout-grid-inner">										
-							<div class="mat-layout-grid-cell">롤렉스 퀴즈 @($"{current}/{questionCount}")</div>
+							<div class="mat-layout-grid-cell">
+								<div class="mat-button">롤렉스 퀴즈 @($"{current}/{questionCount}")</div>
+							</div>
 							<div class="mat-layout-grid-cell"></div>
-							<div class="mat-layout-grid-cell"> @String.Format("누적방문자수 {0}명", totalPeople) </div>
+							<div class="mat-layout-grid-cell">
+								<div class="mat-button">@String.Format("누적방문자수 {0}명", totalPeople)</div>								
+							</div>
 						</div>
 					</div>
 					<MatThemeProvider Theme="@theme2">	
