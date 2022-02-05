@@ -39,4 +39,12 @@ quiz:
     - isAnswer: Y
       example: NFC
 
+
+- question: 롤렉스가 개발한 최초의 손목시계용 방수 케이스를n오이스터 케이스라고 합니다. 오이스터(Oyster)의 뜻은?
+  url: https://content.rolex.com/dam/about-rolex-watches/oyster-case/roller-the-stength-of-a-concept/watchmaking-oyster-case-the-stength-of-a-concept-case-back_sav_10jdm_027_portrait.jpg?imwidth=420
+  answers:
+    - isAnswer: n
+      example: 방수
+    - isAnswer: Y
+      example: 굴
       
