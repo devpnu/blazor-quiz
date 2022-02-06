@@ -1,7 +1,7 @@
 ﻿
 function add() {
     // SDK를 초기화 합니다. 사용할 앱의 JavaScript 키를 설정해 주세요.
-    Kakao.init('2b5793241772e27fc080c267e013566e');
+    Kakao.init('7370434483c30509502381f861cba501');
 
     // SDK 초기화 여부를 판단합니다.
     console.log(Kakao.isInitialized());
