@@ -31,7 +31,7 @@ quiz:
     - isAnswer: n
       example: 쿼츠 무브먼트(Quartz Movement)
 
-- question: 2020년부터 출시된 롤렉스 개런티 카드 속에는nOOO가 들어가 있다?
+- question: 2020년부터 출시된 롤렉스 개런티 카드n속에는 OOO가 들어가 있다?
   url: https://content.rolex.com/dam/rolex-sav/buying-a-rolex/the-rolex-guarantee/2021/rolex-guarantee_retailcampaign2020_guaranteecard.jpg?imwidth=2880
   answers:
     - isAnswer: n
@@ -39,4 +39,12 @@ quiz:
     - isAnswer: Y
       example: NFC
 
+
+- question: 롤렉스 개발한 방수 케이스 이름은n오이스터 케이스 입니다n오이스터(Oyster)의 뜻은?
+  url: https://content.rolex.com/dam/about-rolex-watches/oyster-case/roller-the-stength-of-a-concept/watchmaking-oyster-case-the-stength-of-a-concept-case-back_sav_10jdm_027_portrait.jpg?imwidth=420
+  answers:
+    - isAnswer: n
+      example: 방수
+    - isAnswer: Y
+      example: 굴
       
