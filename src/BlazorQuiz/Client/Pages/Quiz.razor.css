@@ -30,6 +30,8 @@ h1 {
 	margin: 0 auto;
 	height: 100px;
 }
+
+
 .quiz-img{
 	display: block;
 	margin: 0 auto;
@@ -58,17 +60,17 @@ h1 {
 	.quiz-answer:hover {
 		border: 2px solid #b18d58;
 		background-color: #b18d58;
-		cursor: pointer;
+	/*	cursor: pointer;*/
 	}
 
 
-.quiz-current {
+/*.quiz-current {
 	text-align: center;
 	font-size: 15pt;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	color: #888888;
-}
+}*/
 
 .quiz-progress {
 	height: 30px;
@@ -119,20 +121,42 @@ h1 {
 }
 
 .quiz-retry {
-	background-color: #66b8ff; 
-	border: none;
-	color: white;
+	background-color: #141414;
+	border: 2px solid #b18d58;
+	border-radius: 25px;
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 18px;
+	color: #FFFFFF;
+	/*text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 15px;
+	border: 2px solid #b18d58;
+	border-radius: 25px;
+	background-color: #141414;
+	font-size: 12pt;*/
 }
-
 	.quiz-retry:hover {
+		/*background-color: #b18d58;
+		cursor: pointer;*/
 		background-color: #b18d58;
 		cursor: pointer;
 	}
+
+.quiz-share {
+	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+}
+.kakao-img {
+	display: block;
+	margin: 0 auto;
+}
+
+	
 
 .quiz-message {
 	text-align: center;

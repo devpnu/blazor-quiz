@@ -1,6 +1,7 @@
 ﻿@page "/quiz"
 @using BlazorQuiz.Shared
 @inject HttpClient Http
+@inject IJSRuntime JSRuntime
 
 <style>
     @@import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css); 
@@ -28,15 +29,16 @@
 					<div class="mat-caption" style="float:right;">@String.Format("누적 방문자수 {0}명", totalPeople) 
 					</div>
 			
-					<MatThemeProvider Theme="@theme2">	
+					<MatThemeProvider Theme="@theme2">
 						<MatProgressBar Progress="@currentBy100"></MatProgressBar>
 					</MatThemeProvider>
 				</div>
 
 				<div class="quiz">
+
 					<img src="@quiz.Url" class="quiz-img"/>
 
-					<div class="quiz-title">
+					<div class="quiz" style="text-align: center">
 						@foreach (var sub in quiz.Question.Split('n'))
 						{
 							@sub <br/>
@@ -60,6 +62,36 @@
 					<div class="quiz-buttons">
 						<button @onclick="Reset" class="quiz-retry">다시하기</button>
 					</div>
+
+
+
+						<p >
+							<a @onclick="KakaoShare" >
+				
+						  <img  class="kakao-img"
+							src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_small.png"
+							alt="카카오링크 보내기 버튼"
+						  >
+			 
+							<img/>
+
+							  <MatThemeProvider Theme="@theme3">
+						<div style="text-align: center">
+													<MatButton   class="mat-button" inline=true Outlined="true" TrailingIcon="@MatIconNames.Share">카카오톡으로 공유하기</MatButton>
+				</div>
+				</MatThemeProvider>
+							</a>
+						
+					</p>
+
+				
+             			<h2 class="mat-h2"></h2>
+
+        
+       
+
+
+
 			}
 
 
@@ -96,12 +128,12 @@
 	private string message0 = "일부러 장난치신거죠?😑";
 	private string message1 = "컨디션이 안 좋으신 건가요..?😵";
 	private string message2 = "헷갈렸던 문제는 💻검색💻해보는 센스!!";
-	private string message3 = "집중해서 다시 풀어보아요!💪";
+	private string message3 = "집중해서 다시 풀어보세요!💪";
 	private string message4 = "한번 더 풀고 만점 도전!😉";
-	private string message5 = "🌟축하드립니다🌟 고인물 인정!";
+	private string message5 = "🌟축하드립니다🌟 롤렉스 덕후 인정!";
 
 	private string progress = "";
-	
+
 	protected override async Task OnInitializedAsync()
 	{
 		await Reset();
@@ -111,7 +143,7 @@
 	{
 		quizs = await Http.GetFromJsonAsync<QuizModel[]>("QuizData");
 		var people = await Http.GetFromJsonAsync<People>("People");
-		
+
 		totalPeople = people.TotalPeopleCount;
 
 		current = 0;
@@ -161,6 +193,10 @@
 
 		return ment;
 	}
+	private async void KakaoShare()
+	{
+		await JSRuntime.InvokeVoidAsync("add");
+	}
 
 	MatTheme theme1 = new MatTheme()
 		{
@@ -172,5 +208,10 @@
 		{
 			Primary = "#b18d58",
 			Secondary = "#b18d58"
+		};
+	MatTheme theme3 = new MatTheme()
+		{
+			Primary = "#fae100",
+			Secondary = "#fae100"
 		};
 }
