@@ -19,9 +19,9 @@ quiz:
   url: https://shop-phinf.pstatic.net/20211230_289/1640875152810F9Rd5_JPEG/tmp1250414448384315488.jpg
   answers:
     - isAnswer: n
-      example: 오이스터 브레이슬릿(Oyster)
+      example: 오이스터 브레이슬릿(Oyster Bracelet)
     - isAnswer: Y
-      example: 쥬빌리 블레이슬릿(Jubilee bracelet)
+      example: 쥬빌리 블레이슬릿(Jubilee Bracelet)
 
 - question: 다음은 롤렉스 시계 무브먼트이다n이 무브먼트의 방식은??
   url: https://cdn.watchbase.com/caliber/lg/origin:jpg/rolex/3135-f8.webp
