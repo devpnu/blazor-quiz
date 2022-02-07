@@ -14,7 +14,7 @@ namespace BlazorQuiz.Server.Controllers
     {
         private static People people = new People()
         {
-			TotalPeopleCount = 789
+			TotalPeopleCount = 0
 		};
 
 
@@ -28,8 +28,24 @@ namespace BlazorQuiz.Server.Controllers
 		[HttpGet]
 		public People Get()
 		{
+			try
+			{
+				string number = System.IO.File.ReadAllText("people.txt");
+				people.TotalPeopleCount = int.Parse(number);
+
+			}
+			catch (Exception e)
+			{
+				people.TotalPeopleCount = 789;
+			}
+
 			people.YourIpAddr = Request.HttpContext.Connection.RemoteIpAddress.ToString();
 			people.TotalPeopleCount++;
+			
+
+			// 텍스트 파일에 모든 데이타 한꺼번에 쓰기
+			System.IO.File.WriteAllText("people.txt", people.TotalPeopleCount.ToString());
+
 			return people;
 		}
 	}

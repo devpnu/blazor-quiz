@@ -66,18 +66,15 @@
 
 
 						<p >
-							<a @onclick="KakaoShare" >
-				
-						  <img  class="kakao-img"
-							src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_small.png"
-							alt="카카오링크 보내기 버튼"
-						  >
-			 
-							<img/>
-
+							<a @onclick="KakaoShare" >				
+							  <img  class="kakao-img"
+								src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_small.png"
+								alt="카카오링크 보내기 버튼"
+							  >			 
+								<img/>
 							  <MatThemeProvider Theme="@theme3">
 						<div style="text-align: center">
-													<MatButton   class="mat-button" inline=true Outlined="true" TrailingIcon="@MatIconNames.Share">카카오톡으로 공유하기</MatButton>
+						<MatButton   class="mat-button" inline=true Outlined="true" TrailingIcon="@MatIconNames.Share">카카오톡으로 공유하기</MatButton>
 				</div>
 				</MatThemeProvider>
 							</a>
@@ -195,7 +192,16 @@
 	}
 	private async void KakaoShare()
 	{
-		await JSRuntime.InvokeVoidAsync("add");
+		string result = "";
+		if( correctCount == questionCount)
+		{
+			result = "후후 난 만점 맞았어 ^-^";
+		}
+		else
+		{
+			result = "난 아쉽게도 " + (questionCount - correctCount).ToString() + "개 틀렸어....ㅠㅠ";
+		}
+		await JSRuntime.InvokeVoidAsync("add", result);
 	}
 
 	MatTheme theme1 = new MatTheme()

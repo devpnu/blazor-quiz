@@ -1,14 +1,10 @@
 ﻿
-function add() {
-    // SDK를 초기화 합니다. 사용할 앱의 JavaScript 키를 설정해 주세요.
-    Kakao.init('7370434483c30509502381f861cba501');
+function add(result) {
 
-    // SDK 초기화 여부를 판단합니다.
-    console.log(Kakao.isInitialized());
     Kakao.Link.sendDefault({
         objectType: 'text',
         text:
-            '롤렉스 덕후 테스트!!! 당신은 진정한 덕후? ? ?',
+            result + ' 너도 한번 해봐 [롤렉스 덕력 테스트!!!] 너의 덕력을 보여줘 ? ? ?',
         link: {
             mobileWebUrl: 'https://blazorquizserver20220204164221.azurewebsites.net/Quiz',
             webUrl: 'https://blazorquizserver20220204164221.azurewebsites.net/Quiz',
