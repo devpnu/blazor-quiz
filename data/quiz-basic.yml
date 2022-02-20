@@ -63,11 +63,3 @@ quiz:
       example: Pealmaster
     - isAnswer: Y
       example: Seamaster
-      
-- question: 다음중 롤렉스 시계 모델이 아닌것은?
-  url: https://newsroom-content.rolex.com/-/media/project/rolex/newsroom/rolex/rolex-newsroom-int/about-rolex/about-rolex-hub/3colm09haec113247r.jpeg?imwidth=360&imdensity=2
-  answers:
-    - isAnswer: n
-      example: Pealmaster
-    - isAnswer: Y
-      example: Seamaster
