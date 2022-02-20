@@ -64,11 +64,10 @@ quiz:
     - isAnswer: Y
       example: Seamaster
       
- - question: 다음은 롤렉스 시계의 별명은?
-  url: https://cdn2.chrono24.com/images/uhren/11779521-4qffoc8ql0b59iqqegucl6yw-Large.jpg
+- question: 다음중 롤렉스 시계 모델이 아닌것은?
+  url: https://newsroom-content.rolex.com/-/media/project/rolex/newsroom/rolex/rolex-newsroom-int/about-rolex/about-rolex-hub/3colm09haec113247r.jpeg?imwidth=360&imdensity=2
   answers:
-    - isAnswer: Y
-      example: 배트걸
     - isAnswer: n
-      example: 배트맨
-      
+      example: Pealmaster
+    - isAnswer: Y
+      example: Seamaster
