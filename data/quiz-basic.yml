@@ -48,7 +48,7 @@ quiz:
     - isAnswer: Y
       example: 굴
 
-- question: 다음 롤렉스의 브레이슬릿 익스텐션 시스템의 명칭은?
+- question: 다음 롤렉스의 브레이슬릿 익스텐션n 시스템의 명칭은?
   url: https://newsroom-content.rolex.com/-/media/project/rolex/newsroom/rolex/rolex-newsroom-int/features/bracelet/bracelet-extensions-systems/elmt_1704jva_006.jpg?imwidth=540&impolicy=grid-1&imdensity=2
   answers:
     - isAnswer: Y
